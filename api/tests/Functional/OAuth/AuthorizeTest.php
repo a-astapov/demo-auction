@@ -100,8 +100,6 @@ final class AuthorizeTest extends WebTestCase
 
     public function testAuthActiveUser(): void
     {
-        self::markTestIncomplete();
-
         $response = $this->app()->handle(self::html(
             'POST',
             '/authorize?' . http_build_query([
@@ -138,8 +136,6 @@ final class AuthorizeTest extends WebTestCase
 
     public function testAuthWaitUser(): void
     {
-        self::markTestIncomplete();
-
         $response = $this->app()->handle(self::html(
             'POST',
             '/authorize?' . http_build_query([
@@ -164,8 +160,6 @@ final class AuthorizeTest extends WebTestCase
 
     public function testAuthInvalidUser(): void
     {
-        self::markTestIncomplete();
-
         $response = $this->app()->handle(self::html(
             'POST',
             '/authorize?' . http_build_query([
